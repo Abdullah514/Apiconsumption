@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Apiconsumption.Models.Name>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+                      <h3>This is the name comming from Web Api (WebApplication5)</h3>
+
+
+    
+@foreach (var item in Model)
+    {
+       <H1 style="text-align:center; color:darkslategray">
+           @Html.DisplayFor(modelItem => item.personName)
+       </H1>
+    }
